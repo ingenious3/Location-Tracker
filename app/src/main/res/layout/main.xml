@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff000000" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:text="Current Location"
+
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/myLocationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_horizontal"
+            android:text="Normal"
+            android:layout_weight="1"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:onClick="onClick"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_horizontal"
+            android:text="Hybrid"
+            android:layout_weight="1"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:onClick="onClick"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_horizontal"
+            android:text="Terrain"
+            android:layout_weight="1"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:onClick="onClick"
+            android:textSize="15sp"
+           />
+
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ingenious.Map.LocationTracker"
+       />
+</LinearLayout>

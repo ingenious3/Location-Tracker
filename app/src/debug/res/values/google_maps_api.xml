@@ -1,0 +1,22 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=EE:75:29:25:5B:74:54:47:2B:C1:64:B0:51:87:F0:4C:BE:07:BD:AF%3Bcom.ingenious.Map
+
+    You can also add your credentials to an existing key, using this line:
+    EE:75:29:25:5B:74:54:47:2B:C1:64:B0:51:87:F0:4C:BE:07:BD:AF;com.ingenious.Map
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        <!--removed google maps api -->
+    </string>
+
+</resources>

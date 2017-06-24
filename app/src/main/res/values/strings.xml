@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Location Tracker</string>
+    <string name="title_activity_location_tracker">Location Tracker</string>
+    <string name="hello">No Data Found :</string>
+</resources>
